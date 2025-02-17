@@ -6,6 +6,11 @@ services:
     buildCommand: "npm install --include=dev && npm run build"   # Ensure 'vite' is installed and build the project
     startCommand: "npm run preview -- --port 10000" # This runs the start command from package.json
     autoDeploy: true
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+
     envVars:
       - key: NODE_ENV
         value: production
