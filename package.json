@@ -2,12 +2,12 @@
   "name": "hidebehider-frontend",
   "version": "1.0.0",
   "private": true,
-  "scripts": {
-    "dev": "vite",
-    "build": "npm run build",
-    "preview": "npm run start",
-    "start": "npm run start"
-  },
+"scripts": {
+  "build": "vite build",          // This generates the production build
+  "start": "vite preview",        // This should serve the production build
+  "dev": "vite",                  // Development server
+  "preview": "vite preview"       // Preview production build locally
+}
   "dependencies": {
     "@mui/material": "^5.14.10",
     "@mui/icons-material": "^5.14.10",
