@@ -5,14 +5,16 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      input: 'index.html', // Not usually necessary unless you're dealing with multiple entry points
+      input: 'index.html',
     }
   },
   server: {
-    port: 3000,  // Customize the port if needed
-    open: true   // Optionally open the app automatically in your browser
-  }, 
+    host: true,  // Allow access from external hosts (important)
+    port: 10000, // Change to match Render's assigned port
+    open: false, // Prevent auto-opening (not needed for Render)
+  },
   preview: {
-    port: 10000,
-    allowedHosts: ['hidebehider-frontend.onrender.com'}
+    port: 10000, // Ensure preview runs on the same port
+    allowedHosts: ['hidebehider-frontend.onrender.com'], // Add Render domain
+  }
 });
