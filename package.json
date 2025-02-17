@@ -3,11 +3,10 @@
   "version": "1.0.0",
   "private": true,
 "scripts": {
-  "dev": "vite",                   // for local development
-  "build": "vite build",           // for production build
-  "start": "vite preview",         // for previewing the production build
-  "preview": "vite preview"        // for previewing locally after build
-}
+  "dev": "vite",                   
+  "build": "vite build",           
+  "start": "vite preview",          
+  "preview": "vite preview"         
   "dependencies": {
     "@mui/material": "^5.14.10",
     "@mui/icons-material": "^5.14.10",
