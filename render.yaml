@@ -1,13 +1,16 @@
 services:
   - type: web
-    name: my-react-app
+    name: hidebehider-frontend
     env: node
     plan: free
-    buildCommand: "npm install && npm run build"  # Install and build React app
-    startCommand: "npm run serve"  # Serving the build folder
+    buildCommand: "npm install && npm run build"   # Ensure 'vite' is installed and build the project
+    startCommand: "npm run start"                  # This runs the start command from package.json
     autoDeploy: true
+    routes:
+      - src: /*
+        dest: /
     envVars:
       - key: NODE_ENV
         value: production
       - key: REACT_APP_API_URL
-        value: "https://hidebehider-backend.onrender.com"  # Your backend API URL
+        value: "https://hidebehider-backend.onrender.com"  # Add any necessary environment variables
