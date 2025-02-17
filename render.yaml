@@ -7,8 +7,8 @@ services:
     startCommand: "npm run start"                  # This runs the start command from package.json
     autoDeploy: true
     routes:
-      - src: /*
-        dest: /
+      - source: /           # Ensure all routes go to the root for the frontend
+        destination: /      # Map all incoming traffic to the frontend
     envVars:
       - key: NODE_ENV
         value: production
