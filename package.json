@@ -6,7 +6,8 @@
   "dev": "vite",                   
   "build": "vite build",           
   "start": "vite preview",          
-  "preview": "vite preview"         
+  "preview": "vite preview", 
+}, 
   "dependencies": {
     "@mui/material": "^5.14.10",
     "@mui/icons-material": "^5.14.10",
