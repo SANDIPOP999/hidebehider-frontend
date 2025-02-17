@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "private": true,
 "scripts": {
-  "build": "vite build",          // This generates the production build
-  "start": "vite preview",        // This should serve the production build
-  "dev": "vite",                  // Development server
-  "preview": "vite preview"       // Preview production build locally
+  "build": "vite build",          
+  "start": "vite preview",        
+  "dev": "vite",               
+  "preview": "vite preview"       
 }
   "dependencies": {
     "@mui/material": "^5.14.10",
