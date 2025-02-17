@@ -4,7 +4,7 @@ services:
     env: node
     plan: free
     buildCommand: "npm install --include=dev && npm run build"   # Ensure 'vite' is installed and build the project
-    startCommand: "npm run start"                  # This runs the start command from package.json
+    startCommand: "npm run preview -- --port 10000"                  # This runs the start command from package.json
     autoDeploy: true
     envVars:
       - key: NODE_ENV
