@@ -11,5 +11,8 @@ export default defineConfig({
   server: {
     port: 3000,  // Customize the port if needed
     open: true   // Optionally open the app automatically in your browser
-  }
+  }, 
+  preview: {
+    port: 10000,
+    allowedHosts: ['hidebehider-frontend.onrender.com'}
 });
