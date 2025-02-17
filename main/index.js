@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from 'react-dom/client';
 import App from "main/App";
-import "main/index.css"; // Ensure this exists or remove if unnecessary
+ // Ensure this exists or remove if unnecessary
 
 const rootElement = document.getElementById("root");
 const root = ReactDOM.createRoot(rootElement);
