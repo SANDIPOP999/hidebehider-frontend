@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: my-react-app
+    env: node
+    buildCommand: "npm install && npm run build"
+    startCommand: "npm run start"
+    autoDeploy: true
+    routes:
+      - src: /images/*
+        dest: /images/*
+      - src: /assets/*
+        dest: /assets/*
+      - src: /favicon.ico
+        dest: /favicon.ico
+      - src: /:path
+        dest: /
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: REACT_APP_API_URL
+        value: "https://hidebehider-backend.onrender.com"
