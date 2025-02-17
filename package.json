@@ -5,8 +5,8 @@
   "scripts": {
     "dev": "vite",
     "build": "npm run build",
-    "preview": "vite preview",
-    "start": "vite preview"
+    "preview": "npm run start",
+    "start": "npm run start"
   },
   "dependencies": {
     "@mui/material": "^5.14.10",
