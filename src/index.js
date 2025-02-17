@@ -1,10 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';  // Import the App component
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+import "./index.css"; // Ensure this exists or remove if unnecessary
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+const rootElement = document.getElementById("root");
+
+if (!rootElement) {
+  console.error("❌ ERROR: <div id='root'> NOT FOUND!");
+} else {
+  try {
+    ReactDOM.render(
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>,
+      rootElement
+    );
+    console.log("✅ React App Rendered!");
+  } catch (error) {
+    console.error("❌ ERROR in React Rendering:", error);
+  }
+}
