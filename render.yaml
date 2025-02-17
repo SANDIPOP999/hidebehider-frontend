@@ -2,6 +2,7 @@ services:
   - type: web
     name: my-react-app
     env: node
+    plan: free
     buildCommand: "npm install && npm run build"  # Install and build React app
     startCommand: "npm run serve"  # Serving the build folder
     autoDeploy: true
