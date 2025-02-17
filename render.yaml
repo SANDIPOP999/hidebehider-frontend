@@ -6,12 +6,6 @@ services:
     startCommand: "npm run start"
     autoDeploy: true
     routes:
-      - src: /images/*
-        dest: /images/*
-      - src: /assets/*
-        dest: /assets/*
-      - src: /favicon.ico
-        dest: /favicon.ico
       - src: /:path
         dest: /
     envVars:
