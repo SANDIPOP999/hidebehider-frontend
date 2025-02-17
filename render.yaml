@@ -5,10 +5,6 @@ services:
     buildCommand: "npm install && npm run build"  # Install and build React app
     startCommand: "npm run serve"  # Serving the build folder
     autoDeploy: true
-    routes:
-      # All incoming traffic should be redirected to the React app’s `index.html` in the `build` folder
-      - src: /.*  # Catch-all for all routes
-        dest: /index.html  # Serve the React app for any route
     envVars:
       - key: NODE_ENV
         value: production
